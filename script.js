@@ -1,12 +1,13 @@
 const myLibary=[];
 
 
-function Book(title,author,pages,read){
+class Book{
+    constructor(title,author,pages,read){
     this.title=title;
     this.author=author;
     this.pages=pages;
     this.read=read;
-    this.info=function(){ return (this.title+" by "+ this.author+","+this.pages+this.read)};
+    this.info=function(){ return (this.title+" by "+ this.author+","+this.pages+this.read)};}
 }
 const lotr= new Book("lord","tolkien",80,true);
 
